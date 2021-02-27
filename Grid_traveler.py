@@ -1,3 +1,18 @@
+
+def factorial(n):
+    if n == 0:
+        return 1
+    return n*factorial(n-1)
+
+def gridtraveler(m,n):
+    r=n-1
+    d=m-1
+    return factorial(r+d)//(factorial(r)*factorial(d))
+
+m, n = map(int, input().split())
+print(gridtraveler(m, n))
+
+'''
 memo = {(0,0):0,(1,0):0,(0,1):0,(1,1):1}
 def gridtraveler(m,n,memo):
     global val
@@ -21,7 +36,7 @@ def gridtraveler(m,n,memo):
 
 m, n = map(int, input().split())
 print(gridtraveler(m, n,memo))
-
+'''
 '''
 def Gridtraveler(m, n):
     if m == 1 and n == 1:
