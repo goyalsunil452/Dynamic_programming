@@ -1,4 +1,4 @@
-
+# using P&C
 def factorial(n):
     if n == 0:
         return 1
@@ -13,6 +13,7 @@ m, n = map(int, input().split())
 print(gridtraveler(m, n))
 
 '''
+# using Dynamic programming
 memo = {(0,0):0,(1,0):0,(0,1):0,(1,1):1}
 def gridtraveler(m,n,memo):
     global val
@@ -38,6 +39,7 @@ m, n = map(int, input().split())
 print(gridtraveler(m, n,memo))
 '''
 '''
+#using recursion
 def Gridtraveler(m, n):
     if m == 1 and n == 1:
         return 1
