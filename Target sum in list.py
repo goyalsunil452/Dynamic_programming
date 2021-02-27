@@ -49,3 +49,13 @@ def cansum(target,num):
 target = int(input())
 num  = list(map(int, input().split()))
 print(cansum(target,num))
+
+# m = target sum
+# n = num length
+# Brute force
+# time = O(n^m)
+# space = O(m)
+
+# Memoized
+# time = O(m*n)
+# space = O(m)
