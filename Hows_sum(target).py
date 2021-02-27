@@ -18,3 +18,13 @@ def howsum(target,num,memo = {}):
 target = int(input())
 num  = list(map(int, input().split()))
 print(howsum(target,num))
+
+# m = target sum
+# n = num length
+# Brute force
+# time = O(n^m+m)
+# space = O(m)
+
+# Memoized
+# time = O(n*m^2)
+# space = O(m^2)
