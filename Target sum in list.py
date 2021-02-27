@@ -1,4 +1,5 @@
 # if you can add no in list in such a way that you can get target sum (300 [4 2] ) => True
+# Dynamic programming method
 def cansum(target,num,memo = {}):
     if target in memo:
         return memo[target]
@@ -32,6 +33,7 @@ def cansum(target,num):
 
 
 """
+# recursion method
 def cansum(target,num):
     if target == 0:
         return True
