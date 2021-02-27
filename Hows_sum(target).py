@@ -6,10 +6,10 @@ def howsum(target,num,memo = {}):
     if target < 0:
         return None
     for i in num:
-        Rtarget = target - i
-        tResult = howsum(Rtarget, num, memo)
-        if tResult != None:
-            memo[target]=[Rtarget,i]
+        Reminder = target - i
+        Targetresult = howsum(Reminder, num, memo)
+        if Targetresult != None:
+            memo[target] = [Reminder, i]
             return memo[target]
     memo[target] = None
     return memo[target]
